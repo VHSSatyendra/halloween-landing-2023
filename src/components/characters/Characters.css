@@ -1,0 +1,111 @@
+.characters-container {
+  width: 100%;
+  height: 32vw;
+  /* background-color: crimson; */
+  display: flex;
+  /* flex-direction: column;
+    align-items: center; */
+  padding: 2vw 2vw;
+  /* justify-content: center; */
+}
+
+.rev {
+  flex-direction: row-reverse;
+}
+
+.character-holder {
+  padding: 1vw 5vw;
+  /* background-color: cornsilk; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.character-info {
+  height: 60%;
+  width: 60%;
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.character-img {
+  height: 100%;
+  width: 25%;
+  background-color: dodgerblue;
+  border-radius: 2vw;
+  overflow: hidden;
+  /* background-image: url('../../assets/images/vampire.jpg');
+  background-position: center;
+  background-size: cover; */
+}
+
+.violet{
+  background-color: var(--vampling-color);
+  box-shadow: 0px 10px 20px var(--vampling-color);
+}
+.green{
+  background-color: var(--franky-color);
+  box-shadow: 0px 10px 20px var(--franky-color);
+}
+.orange{
+  background-color: var(--pumpkin-color);
+  box-shadow: 0px 10px 20px var(--pumpkin-color);
+}
+
+.character-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2vw;
+    object-fit: cover;
+    opacity: 0.6;
+    transform: scale(1);
+    transition: opacity 1s, transform 1.5s;
+}
+
+.flip{
+  transform: scaleX(-1);
+}
+
+.character-img  img:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.character-title {
+  color: var(--vampling-color);
+  font-family: var(--title);
+  font-size: 4vw;
+  font-weight: normal;
+}
+
+.greenText{
+  color: var(--franky-color);
+}
+.orangeText{
+  color: var(--pumpkin-color);
+}
+
+.character-detail {
+  color: var(--secondary-color);
+  font-family: var(--body);
+  font-size: 1vw;
+  line-height: 1.5vw;
+}
+
+.btn-details {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  font-family: var(--title);
+  padding: 1vw 1vw;
+  font-size: 1.1vw;
+  border-radius: 0.4vw;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
